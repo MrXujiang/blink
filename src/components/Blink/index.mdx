@@ -1,0 +1,51 @@
+---
+name: Blink
+route: /blink
+order: 9
+sidebar: true
+---
+
+import { Playground } from 'docz'
+import Blink from './index'
+
+# Blink
+
+## 默认样式
+
+<Playground>
+  <Blink text="趣谈前端" />
+</Playground>
+
+## 自定义文字颜色
+
+<Playground>
+  <Blink text="趣谈前端" textColor={['red', 'blue']} />
+</Playground>
+
+## 自定义背景色
+
+<Playground>
+  <Blink text="趣谈前端" textColor={['#FF6666', '#99CC33']} themeColor="#000" />
+</Playground>
+
+<Playground>
+  <Blink text="趣谈前端" textColor={['#06c', 'red']} themeColor="orange" />
+</Playground>
+
+## 设置字体大小和背景透明
+
+<Playground>
+  <Blink text="趣谈前端" textColor={['#000', '#003333']} themeColor="#fff" />
+  <Blink text="徐小夕" textColor={['#000', '#003333']} themeColor="#fff" fontSize='24px' />
+</Playground>
+
+## 基本用法
+
+``` js
+// 导入
+import Blink from '@alex_xu/blink'
+
+// 使用
+<Blink />
+<Blink text="趣谈前端" textColor={['blue', 'red']} themeColor="#fff" />
+```

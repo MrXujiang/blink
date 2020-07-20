@@ -1,0 +1,70 @@
+{
+  "name": "@alex_xu/blink",
+  "version": "0.1.0",
+  "description": "An blink blink component of react",
+  "keywords": [
+    "component",
+    "components",
+    "design",
+    "framework",
+    "frontend",
+    "react",
+    "react-component",
+    "ui",
+    "blink"
+  ],
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrXujiang/blink.git"
+  },
+  "contributors": [
+    "alex_xu"
+  ],
+  "scripts": {
+    "start": "npx --max_old_space_size=8096 father doc dev --host 0.0.0.0",
+    "precommit": "npm version prerelease --preid=snapshot",
+    "build": "father build",
+    "build:doc": "father doc build"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "father": "^2.29.2",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "@babel/helper-compilation-targets": "^7.8.7",
+    "@babel/plugin-proposal-dynamic-import": "^7.8.3",
+    "@babel/plugin-syntax-nullish-coalescing-operator": "^7.8.3",
+    "@babel/plugin-syntax-optional-chaining": "^7.8.3",
+    "@babel/plugin-syntax-top-level-await": "^7.8.3",
+    "@babel/plugin-transform-member-expression-literals": "^7.8.3",
+    "@babel/plugin-transform-property-literals": "^7.8.3",
+    "@babel/plugin-transform-reserved-words": "^7.8.3",
+    "@babel/runtime": "^7.7.1",
+    "babel-plugin-import": "^1.12.2",
+    "immutability-helper": "^3.0.1"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "browserslist": [
+    "last 2 version",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 11"
+  ],
+  "publishConfig": {
+    "registry": ""
+  }
+}

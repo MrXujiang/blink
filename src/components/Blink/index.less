@@ -1,0 +1,87 @@
+.blink {
+  position: relative;
+  width: 600px;
+  padding: 20px 0;
+  display: inline-flex;
+  text-align: center;
+  background-color: #000;
+  .blink-item {
+    margin: auto;
+    font-size: 48px;
+    background-color: inherit;
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 3;
+      left: 0;
+      top: 30px;
+      width: 100%;
+      height: 4px;
+      background-color: inherit;
+      animation: lineShake .5s infinite;
+    }
+    .text {
+      font-weight: bold;
+    }
+    .text-front {
+      color: #74fcfd;
+      animation: shakeFront .1s infinite;
+    }
+    .text-back {
+      position: absolute;
+      transform: translate(-5px, -100%);
+      color: #ea3448;
+      mix-blend-mode: lighten;
+      animation: shake .2s infinite;
+      // background-blend-mode: lighten;
+    }
+    @keyframes shakeFront {
+      0% {
+        transform: translate(1px, 1px);
+      }
+      20% {
+        transform: translate(-1px, 0);
+      }
+      60% {
+        transform: translate(-1px, 0);
+      }
+      100% {
+        transform: translate(1px, -1px);
+      }
+    }
+    @keyframes shake {
+      0% {
+        transform: translate(-5px, -100%);
+      }
+      20% {
+        transform: translate(-3px, -100%);
+      }
+      60% {
+        transform: translate(1px, calc(-100% - 1px));
+      }
+      100% {
+        transform: translate(2px, calc(-100% + 1px));
+      }
+    }
+    @keyframes lineShake {
+      0% {
+        top: 10%;
+      }
+      20% {
+        top: 60%;
+      }
+      40% {
+        top: 35%;
+      }
+      60% {
+        top: 2%;
+      }
+      80% {
+        top: 80%;
+      }
+      100% {
+        top: 99%;
+      }
+    }
+  }
+}

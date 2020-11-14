@@ -5,6 +5,9 @@
 
 > A custom library of components that generate faulty art animations.
 
+## demo
+http://io.nainor.com/qt
+
 ## other project for author
 [H5-Dooring | 一款强大的H5编辑器](https://github.com/MrXujiang/h5-Dooring)
    
